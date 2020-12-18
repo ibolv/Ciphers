@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vigenere</title>
+    <link rel="Stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/DES.js"></script>
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label for="tab-btn-1">Виженер</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label for="tab-btn-2">DES</label>
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <label for="tab-btn-3">Задание 3</label>
+
+        <div id="vigenere">
+            <div class="task">
+                <div class="field">
+                    <select className="select" name="action" id="action">
+                        <option selected disabled hidden>Выберите действие</option>
+                        <option value="encrypt">Зашифровать</option>
+                        <option value="decrypt">Дешифровать</option>
+                    </select>
+                    <span class="title">Введите ключ:</span>
+                    <textarea class="text_areaKey" id="inputAreaKey"></textarea>
+                    <span class="title">Введите текст:</span>
+                    <textarea class="text_area" id="inputAreaLetters"></textarea>
+                    <div class="buttons">
+                        <button class="input_button" id="inputButton"  onclick=Vigenere() >Ввод</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <span class="title">Вывод:</span>
+                    <textarea class="text_area_output" id="outputArea" disabled></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="DES">
+            <div class="task">
+                <div class="field">
+                    <select className="select" name="action" id="action">
+                        <option selected disabled hidden>Выберите действие</option>
+                        <option value="encrypt">Зашифровать</option>
+                        <option value="decrypt">Дешифровать</option>
+                    </select>
+                    <span class="title">Введите ключ:</span>
+                    <textarea class="text_areaKey" id="inputAreaKey"></textarea>
+                    <span class="title">Введите текст:</span>
+                    <textarea class="text_area" id="inputAreaLetters"></textarea>
+                    <div class="buttons">
+                        <button class="input_button" id="inputButton"  onclick=Vigenere() >Ввод</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <span class="title">Вывод:</span>
+                    <textarea class="text_area_output" id="outputArea" disabled></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="lab3">
+            
+        </div>
+    </div>
+</body>
+</html>
