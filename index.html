@@ -37,27 +37,33 @@
                     <span class="title">Вывод:</span>
                     <textarea class="text_area_output" id="outputArea" disabled></textarea>
                 </div>
+                <div class="field">
+                    <span class="title">Виженер</span>
+                </div>
             </div>
         </div>
         <div id="DES">
             <div class="task">
                 <div class="field">
-                    <select className="select" name="action" id="action">
+                    <select className="select" name="action" id="actionDES">
                         <option selected disabled hidden>Выберите действие</option>
                         <option value="encrypt">Зашифровать</option>
                         <option value="decrypt">Дешифровать</option>
                     </select>
                     <span class="title">Введите ключ:</span>
-                    <textarea class="text_areaKey" id="inputAreaKey"></textarea>
+                    <textarea class="text_areaKey" id="inputAreaKeyDES"></textarea>
                     <span class="title">Введите текст:</span>
-                    <textarea class="text_area" id="inputAreaLetters"></textarea>
+                    <textarea class="text_area" id="inputAreaTextDES"></textarea>
                     <div class="buttons">
-                        <button class="input_button" id="inputButton"  onclick=Vigenere() >Ввод</button>
+                        <button class="input_button" id="inputButtonDES"  onclick=DES()>Ввод</button>
                     </div>
                 </div>
                 <div class="field">
                     <span class="title">Вывод:</span>
-                    <textarea class="text_area_output" id="outputArea" disabled></textarea>
+                    <textarea class="text_area_output" id="outputAreaDES" disabled></textarea>
+                </div>
+                <div class="field">
+                    <span class="title">DES</span>
                 </div>
             </div>
         </div>
