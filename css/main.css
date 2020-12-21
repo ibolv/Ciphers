@@ -63,6 +63,11 @@
     height: 2em;
 }
 
+#inputButtonrc4 {
+  width: 20em;
+  height: 2em;
+}
+
 .tabs {
     font-size: 0;
   }
@@ -82,7 +87,7 @@
   /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
   #tab-btn-1:checked~#vigenere,
   #tab-btn-2:checked~#DES,
-  #tab-btn-3:checked~#lab3 {
+  #tab-btn-3:checked~#rc4 {
     display: block;
   }
   

@@ -7,6 +7,7 @@
     <link rel="Stylesheet" href="css/main.css" />
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/DES.js"></script>
+    <script type="text/javascript" src="js/streamCipher.js"></script>
 </head>
 <body>
     <div class="tabs">
@@ -67,8 +68,26 @@
                 </div>
             </div>
         </div>
-        <div id="lab3">
-            
+        <div id="rc4">
+            <div class="task">
+                <div class="field">
+                    <span class="title">Введите ключ:</span>
+                    <textarea class="text_areaKey" id="inputAreaKeyrc4"></textarea>
+                    <span class="title">Введите текст:</span>
+                    <textarea class="text_area" id="inputAreaTextrc4"></textarea>
+                    <div class="buttons">
+                        <button class="input_button" id="inputButtonrc4"  onclick=rc4()>Зашифровать/Расшифровать</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <span class="title">Вывод:</span>
+                    <textarea class="text_area_output" id="outputArearc4" disabled></textarea>
+                </div>
+                <div class="field">
+                    <span class="title"></span>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </body>
